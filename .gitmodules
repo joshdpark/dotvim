@@ -7,3 +7,6 @@
 [submodule "pack/plugins/start/vim-sandwich"]
 	path = pack/plugins/start/vim-sandwich
 	url = https://github.com/machakann/vim-sandwich.git
+[submodule "pack/plugins/start/zepl.vim"]
+	path = pack/plugins/start/zepl.vim
+	url = https://github.com/axvr/zepl.vim.git

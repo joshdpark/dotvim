@@ -1,6 +1,7 @@
 " Vim 8 defaults
 silent! source $VIMRUNTIME/defaults.vim
 
+syntax on
 set nowrap lazyredraw incsearch ignorecase splitright splitbelow wildmenu
 set dir=~/tmp
 set conceallevel=2
