@@ -24,7 +24,9 @@ augroup psql
     autocmd FileType sql setlocal formatprg=pg_format\ -
 augroup END
 
-setlocal grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
-setlocal grepformat=%f:%l:%c:%m,%f:%l:%m
+if executable('rg') " if ripgrep is installed
+    setlocal grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+    setlocal grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
 highlight TrailingWhitespace ctermbg=magenta
 call matchadd("TrailingWhitespace", '\v\s+$')
