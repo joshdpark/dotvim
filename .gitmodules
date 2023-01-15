@@ -10,3 +10,6 @@
 [submodule "pack/plugins/start/zepl.vim"]
 	path = pack/plugins/start/zepl.vim
 	url = https://github.com/axvr/zepl.vim.git
+[submodule "pack/plugings/start/ale"]
+	path = pack/plugings/start/ale
+	url = https://github.com/dense-analysis/ale.git
