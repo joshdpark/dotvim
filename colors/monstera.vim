@@ -12,7 +12,7 @@ hi Normal guifg=black guibg=#f2eede gui=NONE cterm=NONE
 hi NonText guifg=grey54 guibg=NONE gui=NONE cterm=NONE
 hi ColorColumn guibg=#f2eede guibg=NONE gui=NONE cterm=NONE
 hi Conceal guifg=lightgrey guibg=NONE gui=NONE cterm=NONE
-hi Comment guifg=black guibg=NONE gui=NONE cterm=NONE
+hi Comment guifg=black guibg=NONE gui=NONE cterm=italic
 hi Cursor guibg=#AAAAAA guifg=NONE gui=NONE cterm=NONE
 hi CursorLine cterm=NONE guifg=black guibg=NONE
 hi CursorLineNR cterm=bold guifg=black
@@ -25,12 +25,14 @@ hi IncSearch guifg=fg guibg=gold gui=NONE cterm=NONE
 hi! link Search IncSearch
 hi LineNr guifg=black guibg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=NONE guibg=NONE gui=NONE ctermbg=NONE cterm=bold,underline
-hi Pmenu guifg=black guibg=peachpuff gui=NONE cterm=NONE
-hi PmenuSel guifg=black guibg=peachpuff gui=bold cterm=bold
+hi Pmenu guifg=black guibg=papayawhip gui=NONE cterm=NONE
+hi PmenuSel guifg=black guibg=papayawhip gui=bold cterm=bold
 hi Question guifg=black guibg=NONE gui=NONE cterm=NONE
 hi QuickFixLine guifg=black guibg=NONE gui=bold,underline cterm=bold,underline
-hi StatusLine guifg=black guibg=NONE gui=NONE cterm=reverse
-hi StatusLineNC guifg=black guibg=NONE gui=NONE cterm=underline
+hi StatusLine guifg=black guibg=papayawhip gui=NONE cterm=NONE
+hi StatusLineNC guifg=grey40 guibg=papayawhip gui=NONE cterm=NONE
+hi StatusLineTerm guifg=darkgreen guibg=NONE gui=NONE cterm=NONE
+hi StatusLineTermNC guifg=darkgreen guibg=NONE gui=NONE cterm=NONE
 hi VertSplit guifg=black guibg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=#CC3E28 guibg=NONE gui=undercurl cterm=NONE
 hi! link SpellCap SpellBad
@@ -41,6 +43,7 @@ hi TabLineSel guifg=black guibg=NONE gui=NONE cterm=bold,underline
 hi TabLineFill guifg=NONE guibg=NONE gui=NONE cterm=NONE
 hi Title guifg=orangered guibg=NONE gui=NONE cterm=NONE
 hi WarningMsg guifg=#EA9D34 guibg=NONE gui=NONE cterm=NONE
+hi WildMenu guifg=black guibg=papayawhip gui=NONE cterm=bold,underline
 
 hi Constant guifg=#1E6FCC guibg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=black guibg=NONE gui=NONE cterm=bold
