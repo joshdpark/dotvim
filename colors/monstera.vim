@@ -51,7 +51,7 @@ hi Function guifg=black guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=black guibg=NONE gui=NONE cterm=bold
 hi PreProc guifg=#816b9a guibg=NONE gui=NONE cterm=NONE
 hi Type guifg=#158c86 guibg=NONE gui=NONE cterm=NONE
-hi Special guifg=black guibg=NONE gui=NONE cterm=NONE
+hi Special guifg=black guibg=NONE gui=NONE cterm=bold
 hi Debug guifg=#CC3E28 guibg=NONE gui=NONE cterm=NONE
 hi Underlined guifg=black guibg=NONE gui=NONE cterm=underline
 hi Error guifg=bg guibg=red gui=NONE cterm=NONE
