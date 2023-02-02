@@ -20,7 +20,7 @@ packadd! matchit
 let g:ale_floating_preview=1
 let g:ale_virtualtext_cursor=1
 let g:ale_floating_window_border=['│', '─', '╭', '╮', '╯', '╰', '│', '─']
-nnoremap <localleader>d :ALEDetail
+nnoremap <localleader>d :ALEDetail<CR>
 
 if executable('rg') " if ripgrep is installed
     setlocal grepprg=rg\ --vimgrep\ --no-heading\ --smart-case

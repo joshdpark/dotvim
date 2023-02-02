@@ -8,7 +8,7 @@ let g:colors_name = 'monstera'
 let g:terminal_ansi_colors = ['#000000', '#CC3E28', '#618774', '#B58900', '#1E6FCC', '#5C21A5', '#56949F', '#AAAAAA', '#555555', '#D685AF', '#216609', '#EA9D34', '#1E6FCC', '#9A7599', '#158c86', '#C8CFDE']
 
 " Generic highlight groups
-hi Normal guifg=black guibg=#f2eede gui=NONE cterm=NONE
+hi Normal guifg=black guibg=white gui=NONE cterm=NONE
 hi NonText guifg=grey54 guibg=NONE gui=NONE cterm=NONE
 hi ColorColumn guibg=#f2eede guibg=NONE gui=NONE cterm=NONE
 hi Conceal guifg=lightgrey guibg=NONE gui=NONE cterm=NONE
@@ -45,13 +45,13 @@ hi Title guifg=orangered guibg=NONE gui=NONE cterm=NONE
 hi WarningMsg guifg=#EA9D34 guibg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=black guibg=papayawhip gui=NONE cterm=bold,underline
 
-hi Constant guifg=#1E6FCC guibg=NONE gui=NONE cterm=NONE
+hi Constant guifg=#0060cf guibg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=black guibg=NONE gui=NONE cterm=bold
 hi Function guifg=black guibg=NONE gui=NONE cterm=NONE
 hi Statement guifg=black guibg=NONE gui=NONE cterm=bold
-hi PreProc guifg=#816b9a guibg=NONE gui=NONE cterm=NONE
-hi Type guifg=#158c86 guibg=NONE gui=NONE cterm=NONE
-hi Special guifg=black guibg=NONE gui=NONE cterm=bold
+hi PreProc guifg=#520e9f guibg=NONE gui=NONE cterm=NONE
+hi Type guifg=#078781 guibg=NONE gui=NONE cterm=NONE
+hi Special guifg=black guibg=NONE gui=NONE cterm=NONE
 hi Debug guifg=#CC3E28 guibg=NONE gui=NONE cterm=NONE
 hi Underlined guifg=black guibg=NONE gui=NONE cterm=underline
 hi Error guifg=bg guibg=red gui=NONE cterm=NONE
