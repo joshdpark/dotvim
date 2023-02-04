@@ -1,6 +1,6 @@
 filetype plugin indent on
 syntax on
-set nowrap lazyredraw incsearch ignorecase splitright splitbelow wildmenu
+set nowrap lazyredraw incsearch ignorecase splitright splitbelow wildmenu hidden ruler
 set wildmode=longest:full,full
 set dir=/tmp
 set conceallevel=2
@@ -12,14 +12,13 @@ set softtabstop=4
 set shiftwidth=4     " number of spaces to use for auto indent
 set autoindent       " copy indent from current line when starting a newline
 set backspace=indent,eol,start
-set hidden
 set regexpengine=2   " set the default regexp engine (mac will freeze up with default)
 
 packadd! matchit
 " ALE configuration
 let g:ale_floating_preview=1
-let g:ale_virtualtext_cursor=1
-let g:ale_floating_window_border=['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+let g:ale_virtualtext_cursor=2
+let g:ale_floating_window_border=['│', '─', '┌', '┐', '┘', '└', '│', '─']
 nnoremap <localleader>d :ALEDetail<CR>
 
 if executable('rg') " if ripgrep is installed
@@ -34,13 +33,16 @@ if &term == 'foot'
     " enable truecolor support
     let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
     let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
-    set termguicolors
-    colo monstera
-    " use a unicode char for vert screen separators
-    set fillchars=vert:│
     " address modifyotherkeys bug
     let &t_TI = "\<Esc>[>4;2m"
     let &t_TE = "\<Esc>[>4;m"
+    set termguicolors
+    colo monstera
+    set fillchars=vert:│,diff:- " use a unicode char for vert screen separators
+else
+    set termguicolors
+    colo monstera
+    set fillchars=vert:│,diff:- " use a unicode char for vert screen separators
 endif
 highlight TrailingWhitespace ctermbg=magenta
 call matchadd("TrailingWhitespace", '\v\s+$')
@@ -50,3 +52,10 @@ function! SynGroup()
     let l:s = synID(line('.'), col('.'), 1)
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
+
+" removes trailing whitespace
+function TrimWhiteSpace()
+    %s/\s*$//
+    ''
+endfunction
+command TrimWhiteSpace call TrimWhiteSpace()
