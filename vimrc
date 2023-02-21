@@ -40,7 +40,9 @@ if &term == 'foot'
     colo monstera
     set fillchars=vert:│,diff:- " use a unicode char for vert screen separators
 else
-    set termguicolors
+    " italic escape code
+    let &t_ZH="\e[3m"
+    let &t_ZR="\e[23m"
     colo monstera
     set fillchars=vert:│,diff:- " use a unicode char for vert screen separators
 endif
