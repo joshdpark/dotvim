@@ -15,16 +15,6 @@ set backspace=indent,eol,start
 set regexpengine=2   " set the default regexp engine (mac will freeze up with default)
 
 packadd! matchit
-" ALE configuration
-let g:ale_floating_preview=1
-let g:ale_virtualtext_cursor=2
-let g:ale_floating_window_border=['│', '─', '┌', '┐', '┘', '└', '│', '─']
-nnoremap <localleader>d :ALEDetail<CR>
-
-if executable('rg') " if ripgrep is installed
-    setlocal grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
-    setlocal grepformat=%f:%l:%c:%m,%f:%l:%m
-endif
 
 " set colorscheme and highlights
 if &term == 'foot'
@@ -46,6 +36,7 @@ else
     colo monstera
     set fillchars=vert:│,diff:- " use a unicode char for vert screen separators
 endif
+" highlight trailing whitespace
 highlight TrailingWhitespace ctermbg=magenta
 call matchadd("TrailingWhitespace", '\v\s+$')
 
