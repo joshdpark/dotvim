@@ -55,7 +55,7 @@ hi Special guifg=black guibg=NONE gui=NONE cterm=NONE ctermfg=black ctermbg=NONE
 hi Debug guifg=#CC3E28 guibg=NONE gui=NONE cterm=NONE ctermfg=160 ctermbg=NONE
 hi Underlined guifg=black guibg=NONE gui=NONE cterm=underline ctermfg=black ctermbg=NONE
 hi Error guifg=bg guibg=red gui=NONE cterm=NONE ctermfg=231 ctermbg=red
-hi Todo guifg=black guibg=yellow gui=NONE cterm=NONE ctermfg=black ctermbg=yellow
+hi Todo guifg=black guibg=yellow gui=NONE cterm=NONE ctermfg=0 ctermbg=230
 
 " Diffs
 hi DiffAdd guifg=black guibg=NONE gui=underline cterm=underline ctermfg=black ctermbg=NONE
